@@ -1,0 +1,137 @@
+/* This gets rid of ugly white margins that are there by default */
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif
+}
+
+.header {
+  width: 100%;
+  background: #3c00bc;
+  background: linear-gradient(90deg, #06165f 0%, #3c00bc 100%);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  padding: 10 20px;
+  max-width: 1200px;
+}
+
+@media screen and (min-width: 400px) {
+  .header__inner {
+    justify-content: space-between;
+    padding: 10px 20px;
+
+  }
+}
+
+.header__logo {
+  color: white;
+  margin: 0 15 5;
+}
+
+.header__btnGrp {
+  margin: 0 15;
+}
+
+/*This is what all buttons have in common*/
+.header__button {
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: 0;
+}
+
+.header__button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/*These styles are for the specific buttons*/
+.header__button--submit {
+  background: orange;
+}
+
+.header__button--signIn {
+  background: #00b719;
+  color: white;
+}
+
+/*GENERAL*/
+.mainContainer {
+  margin: auto;
+}
+
+/*SEARCH*/
+
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  background-color: #e8eaf6;
+}
+
+.search__title {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.search__input {
+  padding: 8px 30px 8px 8px;
+  border-radius: 20px;
+  min-width: 300px;
+  border: 1px solid lightgray;
+}
+
+.search__searchIcon {
+  position: relative;
+  right: 30px;
+}
+
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+  max-width: 1200px;
+}
+
+.faq__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.faq__list-item {
+  min-height: 8rem;
+  border-radius: 5px;
+  width: 300px;
+  gap: 2rem;
+  padding: 20px;
+  border: 1px solid #ccc;
+  gap: 2rem;
+}
+
+
+
+/*FOOTER*/
+.footer {
+  background: linear-gradient(90deg, #06165f 0%, #3c00bc 100%);
+  padding: 20px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  width: 100%;
+  color: white;
+}
