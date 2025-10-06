@@ -10,6 +10,7 @@ html {
   width: 100%;
   background: #3c00bc;
   background: linear-gradient(90deg, #06165f 0%, #3c00bc 100%);
+  font-size: x-large;
 }
 
 .header__inner {
@@ -26,17 +27,21 @@ html {
   .header__inner {
     justify-content: space-between;
     padding: 10px 20px;
-
   }
 }
 
 .header__logo {
   color: white;
-  margin: 0 15 5;
+  margin: 0 10 15;
+}
+
+@media screen and (min-width: 400px) {
+  .header__logo {
+    margin: 0 9;
+  }
 }
 
 .header__btnGrp {
-  margin: 0 15;
 }
 
 /*This is what all buttons have in common*/
