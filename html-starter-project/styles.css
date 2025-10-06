@@ -32,7 +32,7 @@ html {
 
 .header__logo {
   color: white;
-  margin: 0 10 15;
+  margin: 0 10 10;
 }
 
 @media screen and (min-width: 400px) {
@@ -42,6 +42,7 @@ html {
 }
 
 .header__btnGrp {
+
 }
 
 /*This is what all buttons have in common*/
@@ -85,18 +86,26 @@ html {
 .search__title {
   margin-bottom: 10px;
   font-size: 1.5em;
+  text-align: center;
+}
+
+.search__wrapper {
+  position: relative;
+  max-width: 350px;
+  width: 100%
 }
 
 .search__input {
   padding: 8px 30px 8px 8px;
   border-radius: 20px;
-  min-width: 300px;
+  width: 100%;
   border: 1px solid lightgray;
 }
 
 .search__searchIcon {
-  position: relative;
-  right: 30px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
 }
 
 .faq {
@@ -110,19 +119,20 @@ html {
 .faq__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   list-style-type: none;
-  justify-content: center;
+  padding: 20px;
 }
 
 .faq__list-item {
   min-height: 8rem;
   border-radius: 5px;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   gap: 2rem;
   padding: 20px;
   border: 1px solid #ccc;
-  gap: 2rem;
 }
 
 
