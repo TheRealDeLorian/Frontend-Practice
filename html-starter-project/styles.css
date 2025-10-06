@@ -10,7 +10,7 @@ html {
   width: 100%;
   background: #3c00bc;
   background: linear-gradient(90deg, #06165f 0%, #3c00bc 100%);
-  font-size: x-large;
+
 }
 
 .header__inner {
@@ -23,7 +23,7 @@ html {
   max-width: 1200px;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 433px) {
   .header__inner {
     justify-content: space-between;
     padding: 10px 20px;
@@ -33,16 +33,18 @@ html {
 .header__logo {
   color: white;
   margin: 0 10 10;
+  font-size: 24px;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 433px) {
   .header__logo {
-    margin: 0 9;
+    margin: 0 9 0 0;
   }
 }
 
 .header__btnGrp {
-
+  display: flex;
+  gap: 10px;
 }
 
 /*This is what all buttons have in common*/
@@ -50,6 +52,7 @@ html {
   padding: 10px 15px;
   border-radius: 15px;
   border: 0;
+  font: 16px Arial;
 }
 
 .header__button:hover {
@@ -84,8 +87,8 @@ html {
 }
 
 .search__title {
-  margin-bottom: 10px;
-  font-size: 1.5em;
+  margin: 21.4px 0 20px;
+  font-size: 32px;
   text-align: center;
 }
 
@@ -96,7 +99,7 @@ html {
 }
 
 .search__input {
-  padding: 8px 30px 8px 8px;
+  padding: 10px 60px 10px 20px;
   border-radius: 20px;
   width: 100%;
   border: 1px solid lightgray;
@@ -143,10 +146,18 @@ html {
   padding: 20px;
 }
 
+.footer__column {
+  flex-grow: 1;
+}
+
 .footer__content {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  gap:2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 1200px;
   width: 100%;
   color: white;
+  margin: auto;
 }
