@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Imperial+Script&display=swap');
+*,*::after,*::before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5% /* Makes 1rem equal to 10px */
+}
+body, html {
+  padding: 0;
+  margin: 0;
+  
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding: 2px;
+}
+a:hover {
+  
+}
+.header__button {
+  border: 1px solid;
+
+}
+
+
+.header {
+  display: flex;
+  justify-content:space-around;
+}
+
+.header__left {
+  font-family:  "Edu NSW ACT Cursive", cursive;
+  font-size: 3rem;
+}
+
+.header__right {
+  display: flex;
+  font-size: 2rem;
+}
+
+.header__links {
+  display: flex;
+  gap: 3rem;
+
+  
+}
+
+.header__buttons {
+  display: flex;
+  gap: 3rem;
+  
+}
